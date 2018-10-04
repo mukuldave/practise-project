@@ -1,0 +1,78 @@
+<html>
+  <head> 
+  <title> navigation bar </title>
+  <meta charset="utf-8" />
+  <link href="navigation.css" rel="stylesheet" /> 
+  
+     
+		<script type="text/javascript" > 
+		function webloaded(){
+		 alert('HELLO!! Welcome  to  Mukul\'s website');
+		 }
+		 
+		 webloaded();
+		 
+		 function changetext(){
+		  var text = document.getElementById('milind');
+		  text.innerHTML='HEY YOU CLICKED ME';
+		 }
+		 
+		 var imgchange ='f'
+		 function changeimg(){
+		 var image=document.getElementById('xyz');
+		 if (imgchange=='f') 
+		 {image.src='achilles2.jpg';
+		  imgchange='t';}
+		  else 
+		 { image.src='achilles.jpg';
+		 imgchange='f';
+		 }
+		}
+		setInterval('changeimg()',2000);
+		
+		 
+		 
+		</script>	
+  </head>
+  <body>
+   <div class="mukul"> <ul> <li><a>Home </a></li> 
+	     <li> <a>About </a>
+	         <ul><li> <a href="ourpage.html">our page </a></li>
+			     <li> <a>our story </a></li>
+				 <li> <a>camp sites </a></li> 
+				 <li> <a>mission </a></li> </ul>
+		</li>
+			<li> <a> Carrers </a> 
+                <ul>		
+                 <li> <a>join us </a></li>
+			     <li> <a>score sheet </a></li>
+				
+			<li><a> mission </a></li> </ul>
+		       </li>	
+			   <li> <a> Help </a>
+			    <ul> <li> <a href="signup.html">Sign up</a> </li>
+				 <li> <a>visit here </a></li>
+				 </ul>
+				 </li>
+				 </div>
+				 
+				 <div id="dave" >
+				  <image id="xyz" src="achilles.jpg" alt="xyz"  width="250" height="250" onclick="changeimg();" />
+				  
+				  <div class="shambu" >
+				  <p> IF YOU WANT TO LIVE A HAPPY LIFE ALWAYS TIE IT TO A GOAL AND NOT TO PEOPLE OR OBJECTS.</p>
+				     </div >
+				  
+				  
+				 <div class="penguin" >
+				    <p id="milind" onclick="changetext();"> HELLO , THIS IS A PROJECT MADE BY MUKUL ! </p>
+				   </div>
+				  
+				 
+				
+				  
+		
+			  
+				 
+   </body>
+   </html>
